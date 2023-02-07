@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment 222\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
       "projectName": "AM.ApplicationCore",
-      "projectPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment 222\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment 222\\AM.ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

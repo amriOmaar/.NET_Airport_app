@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AM.ApplicationCore.Domain;
+using AM.ApplicationCore.Services;
 using System.Reflection.Metadata.Ecma335;
 
 //Console.WriteLine("Hello, World!");
@@ -11,7 +12,7 @@ using System.Reflection.Metadata.Ecma335;
 //Plane Plane2 = new Plane(PlaneType.Boing, 100, new DateTime(2023, 02, 02));
 
 
-Plane tayara3 = new Plane()
+Plane p3 = new Plane()
 {
     Capacity = 120,
     ManufactureDate = new DateTime(2023, 02, 01),
@@ -47,3 +48,7 @@ Staff staff1 = new Staff
 };
 Console.WriteLine("---------------------------------");
 staff1.PassengerType();
+
+
+ServiceFlight flight = new ServiceFlight();
+flight.Flights = TestData.listFlights;

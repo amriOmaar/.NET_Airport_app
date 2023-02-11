@@ -52,3 +52,15 @@ staff1.PassengerType();
 
 ServiceFlight flight = new ServiceFlight();
 flight.Flights = TestData.listFlights;
+
+Console.WriteLine(" flights dates ");
+foreach (var listFlights in flight.GetFlightsDates("Paris"))
+{
+
+    Console.WriteLine(listFlights);
+
+}
+
+Console.WriteLine(" get flights ");
+flight.GetFlights("Destination", "Paris");
+flight.GetFlights("EstimatedDuration", "105");

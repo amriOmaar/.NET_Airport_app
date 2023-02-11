@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AM.ApplicationCore.Interfaces
 {
-    internal interface IServiceFlight
+    public interface IServiceFlight
     {
+        public List<DateTime> GetFlightsDates(string destination);
+        public void GetFlights(string filterType, string filterValue);
     }
 }

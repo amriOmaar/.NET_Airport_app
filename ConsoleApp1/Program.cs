@@ -90,4 +90,11 @@ foreach (var i in flight.SeniorTravellers(TestData.flight1))
 
 flight.DestinationGroupedFlights();
 
+Passenger pas = new Passenger();  
+pas.FirstName= "omaar ";
+pas.LastName= "amri";
+Console.WriteLine(pas.ToString());
+pas.UpperFulName();
+Console.WriteLine(pas.ToString());
+
 

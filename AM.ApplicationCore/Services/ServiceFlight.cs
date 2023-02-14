@@ -15,24 +15,29 @@ namespace AM.ApplicationCore.Services
 
         public List<Flight> Flights { get; set; } = new List<Flight>();
 
-        public List<DateTime> GetFlightsDates(string destination)
+        public IEnumerable<DateTime> GetFlightsDates(string destination)
         {
-            List<DateTime> Listdates = new List<DateTime>();
+            //List<DateTime> Listdates = new List<DateTime>();
 
-            foreach (var f in Flights)
-            {
-                if (f.Destination.Equals(destination))
-                {
-                    Listdates.Add(f.FlightDate);
-                }
-            }
+            //foreach (var f in Flights)
+            //{
+              //  if (f.Destination.Equals(destination))
+                //{
+                  //  Listdates.Add(f.FlightDate);
+               // }
+           // }
 
-            return Listdates;
+            // return Listdates;
 
             //IEnumerable<DateTime> req = from f  in Flights
                                       //  where f.Destination.Equals(destination)
                                        // select f.FlightDate;
             //return req;
+
+            IEnumerable<DateTime> queryLambda = Flights
+                .Where(f => f.Destination == destination)
+                .Select(f => f.FlightDate);
+            return queryLambda;
 
         }
 
@@ -139,12 +144,58 @@ namespace AM.ApplicationCore.Services
 
             return req.Take(3);
 
+        }
 
+        public IEnumerable<IGrouping<string, Flight>> DestinationGroupedFlights()
+        {
+            var query = from f in Flights
+                      group f by f.Destination;
+            foreach(var g in query)
+            {
+                Console.WriteLine("Destination :" + g.Key);
+                foreach(var v in g)
+                {
+                    Console.WriteLine("Decolage :" + v.FlightDate);
+                }
+            }
+
+            return query;
+            
 
         }
+
+        public Action<Plane> FlightDetailsDel;
+        public Func<string, double> DurationAverageDel;
+
+        public ServiceFlight()
+        {
+            FlightDetailsDel = plane =>
+            {
+                var query = from f in Flights
+                            where f.Plane == plane
+                            select f;
+                foreach (var f in query)
+                {
+                    Console.WriteLine("destination : " + f.Destination + "flight Date :" + f.FlightDate);
+                }
+            };
+            DurationAverageDel = destination =>
+            {
+                var req = from f in Flights
+                          where f.Destination.Equals(destination)
+                          select f.EstimatedDuration;
+
+                var reqAverage = TestData.listFlights
+                                    .Where(f => f.Destination == destination)
+                                    .Average(f => f.EstimatedDuration);
+
+                return req.Average();
+            };
+        }
+
 
 
     }
 
-    
+
 }

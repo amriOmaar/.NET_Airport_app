@@ -66,14 +66,17 @@ flight.GetFlights("Destination", "Paris");
 flight.GetFlights("EstimatedDuration", "105");
 
 
-flight.ShowFlightsDetails(TestData.BoingPlane);
+//flight.ShowFlightsDetails(TestData.BoingPlane);
+flight.FlightDetailsDel(TestData.BoingPlane);
 
 Console.WriteLine("Number of Flighs : " +
     flight.ProgrammedFlightsNumber(new DateTime(2022, 02, 01))
     );
 
+//Console.WriteLine("Average of Flighs : " + flight.DurationAverage("Madrid"));
+
 Console.WriteLine("Average of Flighs : " +
-    flight.DurationAverage("Madrid"));
+    flight.DurationAverageDel("Madrid"));
 
 foreach (var i in flight.OrderDurationFlights())
 {
@@ -84,3 +87,7 @@ foreach (var i in flight.SeniorTravellers(TestData.flight1))
 {
     Console.WriteLine("SeniorTravellers" + i);
 }
+
+flight.DestinationGroupedFlights();
+
+

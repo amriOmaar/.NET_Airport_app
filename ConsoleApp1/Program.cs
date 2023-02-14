@@ -64,3 +64,23 @@ foreach (var listFlights in flight.GetFlightsDates("Paris"))
 Console.WriteLine(" get flights ");
 flight.GetFlights("Destination", "Paris");
 flight.GetFlights("EstimatedDuration", "105");
+
+
+flight.ShowFlightsDetails(TestData.BoingPlane);
+
+Console.WriteLine("Number of Flighs : " +
+    flight.ProgrammedFlightsNumber(new DateTime(2022, 02, 01))
+    );
+
+Console.WriteLine("Average of Flighs : " +
+    flight.DurationAverage("Madrid"));
+
+foreach (var i in flight.OrderDurationFlights())
+{
+    Console.WriteLine(i);
+}
+
+foreach (var i in flight.SeniorTravellers(TestData.flight1))
+{
+    Console.WriteLine("SeniorTravellers" + i);
+}

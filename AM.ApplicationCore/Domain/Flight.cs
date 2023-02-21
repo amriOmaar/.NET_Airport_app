@@ -21,10 +21,11 @@ namespace AM.ApplicationCore.Domain
         public DateTime EffectiveArrival { get; set; }
 
         public int EstimatedDuration { get; set; }
+        public string Airline { get; set; }
 
         public Plane Plane { get; set; }
 
-        public ICollection<Passenger> Passengers { get; set; }
+        public virtual List<Passenger> Passengers { get; set; }
 
 
         public override string ToString()

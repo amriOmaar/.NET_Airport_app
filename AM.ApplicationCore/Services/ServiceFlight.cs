@@ -90,6 +90,12 @@ namespace AM.ApplicationCore.Services
             var query = from f in Flights
                         where f.Plane == plane
                         select f;
+
+            var queryLambda = TestData.listFlights
+                .Where(f => f.Plane == plane)
+                .Select(f => new { f.FlightDate, f.Destination }
+                );
+
             foreach (var f in query)
             {
                 Console.WriteLine("destination : " + f.Destination + "flight Date :" + f.FlightDate);
@@ -103,7 +109,12 @@ namespace AM.ApplicationCore.Services
                                 &&
                                 (f.FlightDate - startDate).TotalDays < 7)
                                 select f;
-                return query.Count();
+
+            return TestData.listFlights.Where(f => (f.FlightDate - startDate).TotalDays > 0 &&
+                 (f.FlightDate - startDate).TotalDays < 7).Count();
+
+
+            return query.Count();
                 
         }
 
@@ -116,12 +127,13 @@ namespace AM.ApplicationCore.Services
                       where f.Destination.Equals(destination) 
                       select f.EstimatedDuration;
 
-            var reqAverage = TestData.listFlights
+            var queryLambda = TestData.listFlights
                                 .Where(f => f.Destination == destination)
                                 .Average(f => f.EstimatedDuration);
 
 
-            return req.Average();
+            return queryLambda;
+            //return req.Average();
         }
 
         public IEnumerable<Flight> OrderDurationFlights()
@@ -130,8 +142,10 @@ namespace AM.ApplicationCore.Services
                       orderby f.EstimatedDuration descending
                       select f;
 
+            var queryLambda = TestData.listFlights.OrderByDescending(f => f.EstimatedDuration);
 
-            return req;
+
+            return queryLambda;
 
         }
 
@@ -141,6 +155,11 @@ namespace AM.ApplicationCore.Services
             var req = from f in flight.Passengers.OfType<Traveller>() 
                       orderby f.BirthDate ascending
                       select f;
+
+            return flight.Passengers
+                .OfType<Traveller>()
+                .OrderBy(t => t.BirthDate)
+                .Take(3);
 
             return req.Take(3);
 
@@ -159,7 +178,12 @@ namespace AM.ApplicationCore.Services
                 }
             }
 
-            return query;
+
+            var queryLambda = TestData
+                .listFlights.GroupBy(f => f.Destination);
+
+            //return query;
+            return queryLambda;
             
 
         }

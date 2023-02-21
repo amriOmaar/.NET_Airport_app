@@ -13,16 +13,18 @@ namespace AM.ApplicationCore.Domain
     }
     public class Plane
     {
+
+        public int Id { get; set; }
+
         public int Capacity { get; set; }
 
         public DateTime ManufactureDate { get; set; }
 
-        public int PlandeId { get; set; }
 
         public PlaneType PlaneType { get; set;}
 
 
-        public ICollection<Flight> Flights { get; set; }
+        public virtual List<Flight> Flights { get; set; }
 
         public override string ToString()
         {

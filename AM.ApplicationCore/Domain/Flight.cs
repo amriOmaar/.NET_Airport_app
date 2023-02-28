@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,10 @@ namespace AM.ApplicationCore.Domain
         public int EstimatedDuration { get; set; }
         public string Airline { get; set; }
 
+        [ForeignKey("Plane")]
+        public int PlaneId { get; set; }
+
+        [ForeignKey("PlaneId")]
         public Plane Plane { get; set; }
 
         public virtual List<Passenger> Passengers { get; set; }

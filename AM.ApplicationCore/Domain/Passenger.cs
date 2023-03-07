@@ -24,11 +24,8 @@ namespace AM.ApplicationCore.Domain
         [DataType(DataType.EmailAddress)]
         public string EmailAdresse { get; set; }
 
-        [MinLength(3, ErrorMessage ="Min Lenght : 3")]
-        [MaxLength(25, ErrorMessage = "Max Lenght : 25")]
-        public string FirstName { get; set; }
 
-        public string LastName  { get; set; }
+        public FullName Fullname { get; set; }
 
         //[DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^[0-9]{8}$", 
@@ -39,7 +36,7 @@ namespace AM.ApplicationCore.Domain
 
         public override string ToString()
         {
-            return "Nom: " +this.FirstName + "Prenom: " +this.LastName;
+            return "Nom: " +this.Fullname.FirstName + "Prenom: " +this.Fullname.LastName;
         }
         //public bool checkprofile(string firstname, string lastname,string mail)
         //{
@@ -49,11 +46,11 @@ namespace AM.ApplicationCore.Domain
         {
             if (mail == null)
             {
-                return firstname == this.FirstName && lastname == this.LastName;
+                return firstname == this.Fullname.FirstName && lastname == this.Fullname.LastName;
             }
             else
             {
-                return firstname == this.FirstName && lastname == this.LastName && mail == this.EmailAdresse;
+                return firstname == this.Fullname.FirstName && lastname == this.Fullname.LastName && mail == this.EmailAdresse;
             }
         }
         public virtual void PassengerType()

@@ -1,36 +1,24 @@
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.deps.json
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.dll
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.pdb
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.AssemblyReference.cache
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfoInputs.cache
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfo.cs
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.CoreCompileInputs.cache
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.dll
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
-C:\Users\fobok\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.deps.json
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.pdb
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.AssemblyReference.cache
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfoInputs.cache
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfo.cs
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
-C:\Users\lenovo\source\repos\AirPortManagment 222\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.deps.json
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.pdb
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.AssemblyReference.cache
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfoInputs.cache
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfo.cs
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
-C:\Users\lenovo\source\repos\AirPortManagment\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.deps.json
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.dll
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.pdb
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.AssemblyReference.cache
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfo.cs
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.dll
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
+C:\Users\safso\source\repos\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.deps.json
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.dll
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.pdb
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.AssemblyReference.cache
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfo.cs
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.dll
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
+C:\Users\abdou\Downloads\AirportManagement (1)\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll

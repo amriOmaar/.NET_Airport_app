@@ -1,100 +1,78 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AM.ApplicationCore.Domain;
 using AM.ApplicationCore.Services;
-using System.Reflection.Metadata.Ecma335;
-
+using AM.Infrastructure;
 //Console.WriteLine("Hello, World!");
-//Plane Plane1 = new Plane();
-//Plane1.Capacity = 120;
-//Plane1.ManufactureDate = new DateTime(2023, 02, 01);
-//Plane1.PlaneType = PlaneType.Boing;
+////Plane Plane1  = new Plane();
+////Plane1.capacity= 200;
+////Plane1.ManufactureDate = new DateTime(2013, 01, 31);
+////Plane1.PlaneType = PlaneType.Boing;
 
-//Plane Plane2 = new Plane(PlaneType.Boing, 100, new DateTime(2023, 02, 02));
-
-
-Plane p3 = new Plane()
-{
-    Capacity = 120,
-    ManufactureDate = new DateTime(2023, 02, 01),
-    PlaneType = PlaneType.Boing
-};
-
-Passenger p = new Passenger
-{
-    FirstName = "omar",
-    LastName = "amri",
-    EmailAdresse="omar@esprit.tn"
-
-};
-Console.WriteLine(p.checkprofile("omar", "amri","omar@esprit.tn"));
-
-Traveller Traveller1 = new Traveller
-{
-    FirstName = "name1",
-    LastName = "name2",
-    Nationality = "Tunisienne"
+////Plane Plane2 = new Plane(PlaneType.Boing, 100, new DateTime(2013, 01, 31));
 
 
-};
-Console.WriteLine("---------------------------------");
-Traveller1.PassengerType();
-
-Staff staff1 = new Staff
-{
-    FirstName = "test",
-    LastName = "test",
-    Function = "DEV WEB"
-
-};
-Console.WriteLine("---------------------------------");
-staff1.PassengerType();
+//Plane Plane3 = new Plane()
+//{
+//    capacity= 3,
+//    ManufactureDate= DateTime.Now,
+//    PlaneType = PlaneType.Airbus
+//};
 
 
-ServiceFlight flight = new ServiceFlight();
-flight.Flights = TestData.listFlights;
+//Passenger passenger1 = new Passenger
+//{
+//    Fullname = new FullName
+//    {
+//        FirstName = "safa",
+//        LastName = "fliss",
+//    },
+//        EmailAddress = "safa.fliss@esprit.tn"
+//};
 
-Console.WriteLine(" flights dates ");
-foreach (var listFlights in flight.GetFlightsDates("Paris"))
-{
-
-    Console.WriteLine(listFlights);
-
-}
-
-Console.WriteLine(" get flights ");
-flight.GetFlights("Destination", "Paris");
-flight.GetFlights("EstimatedDuration", "105");
-
-
-//flight.ShowFlightsDetails(TestData.BoingPlane);
-flight.FlightDetailsDel(TestData.BoingPlane);
-
-Console.WriteLine("Number of Flighs : " +
-    flight.ProgrammedFlightsNumber(new DateTime(2022, 02, 01))
-    );
-
-//Console.WriteLine("Average of Flighs : " + flight.DurationAverage("Madrid"));
-
-Console.WriteLine("Average of Flighs : " +
-    flight.DurationAverageDel("Madrid"));
-
-foreach (var i in flight.OrderDurationFlights())
-{
-    Console.WriteLine(i);
-}
-
-foreach (var i in flight.SeniorTravellers(TestData.flight1))
-{
-    Console.WriteLine("SeniorTravellers" + i);
-}
-
-flight.DestinationGroupedFlights();
-
-Passenger pas = new Passenger();  
-pas.FirstName= "omaar ";
-pas.LastName= "amri";
-Console.WriteLine(pas.ToString());
-pas.UpperFulName();
-Console.WriteLine(pas.ToString());
+//Console.WriteLine(passenger1.CheckProfile("safa", "fliss", "safa.fliss@esprit.tn"));
+//Traveller Traveller1 = new Traveller
+//{
+//    FirstName = "safa",
+//    LastName = "fliss",
+//    Nationality = "Tunisienne"
+//};
+//Console.WriteLine("Traveller1: ");
+//Traveller1.PassengerType();
+//Staff Staff1 = new Staff
+//{
+//    FirstName = "safa",
+//    LastName = "fliss",
+//    Salary = 1000.0
+//};
+//Console.WriteLine("Staff1 : ");
+//Staff1.PassengerType();
 
 
+
+//ServiceFlight sf = new ServiceFlight();
+//sf.Flights = TestData.listFlights;
+//foreach(var item in sf.GetFlightDates("Paris"))
+//{
+//    Console.WriteLine(item);
+//};
+//sf.GetFlights("Destination", "Paris");
+////sf.ShowFlightDetails(TestData.BoingPlane); 
+//sf.FlightDetailsDel(TestData.BoingPlane); //(question 17 et 18)
+//Console.WriteLine("total flights: " + sf.ProgrammedFlightNumber(new DateTime(2022,02,01)));
+//Console.WriteLine("total Average : " + sf.DurationAverage("Paris"));
+//foreach(var item in sf.OrderedDurationFlights())
+//{
+//    Console.WriteLine(item);
+//}
+//foreach(var item in sf.SeniorTravellers(TestData.flight1))
+//{
+//    Console.WriteLine(item);
+//}
+//sf.DestinationGroupedFlights();
+//Console.WriteLine(passenger1.Fullname.FirstName + passenger1.Fullname.LastName);
+//passenger1.UpperFullName();
+//Console.WriteLine(passenger1.Fullname.FirstName + passenger1.Fullname.LastName);
+AMContext ctx = new AMContext();
+ctx.Flights.Add(TestData.flight1);
+ctx.SaveChanges();
+Console.WriteLine(ctx.Flights.First().Plane.capacity);

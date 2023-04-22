@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.Infrastructure\\AM.Infrastructure.csproj": {}
+    "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+    "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
         "projectName": "AM.ApplicationCore",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\obj\\",
+        "projectPath": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\abdou\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\abdou\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,10 +43,6 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.3, )"
             }
           },
           "imports": [
@@ -69,17 +65,17 @@
         }
       }
     },
-    "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.Infrastructure\\AM.Infrastructure.csproj": {
+    "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.Infrastructure\\AM.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
         "projectName": "AM.Infrastructure",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.Infrastructure\\AM.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\abdou\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\abdou\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\source\\repos\\AirPortManagment\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
+              "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\abdou\\Downloads\\AirportManagement (1)\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
               }
             }
           }
@@ -110,6 +106,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
               "version": "[7.0.3, )"
             },

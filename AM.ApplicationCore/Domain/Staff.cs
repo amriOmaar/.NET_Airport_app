@@ -10,24 +10,17 @@ namespace AM.ApplicationCore.Domain
     public class Staff:Passenger
     {
         public DateTime EmploymentDate { get; set; }
-
         public string Function { get; set; }
-
         [DataType(DataType.Currency)]
         public double Salary { get; set; }
-
         public override string ToString()
         {
-            return "Date Employment: " + this.EmploymentDate + "Function: " + this.Function;
+            return "Function: " + this.Function;
         }
-
-
         public override void PassengerType()
         {
             base.PassengerType();
-            Console.WriteLine("I am a STAFF");
+            Console.WriteLine("I am a staff Member");
         }
     }
-
-    
 }

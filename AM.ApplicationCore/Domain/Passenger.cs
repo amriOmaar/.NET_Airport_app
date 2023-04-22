@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,53 +9,45 @@ namespace AM.ApplicationCore.Domain
 {
     public class Passenger
     {
-
-        //public int Id { get; set; }
-
-        [Display(Name = "Date of Birth")]
+        [Display(Name ="name of birth")]
         [DataType(DataType.DateTime)]
-        public DateTime  BirthDate{ get; set; }
+        public DateTime BirthDate { get; set; }
         [Key]
         [StringLength(7)]
         public string PassportNumber { get; set; }
-
         //[EmailAddress]
         [DataType(DataType.EmailAddress)]
-        public string EmailAdresse { get; set; }
-
-
+        public string EmailAddress { get; set; }
+       
         public FullName Fullname { get; set; }
-
-        //[DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^[0-9]{8}$", 
-            ErrorMessage = "Invalid Phone Number!")]
-        public string TelNumber { get; set; }
-
-        public virtual List<Flight> Flights { get; set; }
-
+        [RegularExpression(@"^[0-9]{8}$", ErrorMessage = "Invalid Phone Number!")]
+        public string? TelNumber { get; set; }
+        public int Id { get; set; }
+        //public ICollection<Flight> Flights { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
         public override string ToString()
         {
-            return "Nom: " +this.Fullname.FirstName + "Prenom: " +this.Fullname.LastName;
+            return "FirstName & LastName: " + this.Fullname.FirstName + this.Fullname.LastName;
         }
-        //public bool checkprofile(string firstname, string lastname,string mail)
+        //public bool CheckProfile(string firstName, string lastName)
         //{
-        //    return firstname == this.FirstName && lastname == this.LastName && mail ==this.EmailAdresse;
+        //    return firstName == this.FirstName && lastName == this.LastName;
         //}
-        public bool checkprofile(string firstname, string lastname, string mail=null)
+        //public bool CheckProfile(string firstName, string lastName, string email)
+        //{
+        //    return firstName == this.FirstName && lastName == this.LastName && email==this.EmailAddress;
+        //}
+        public bool CheckProfile(string firstName, string lastName, string email=null)
         {
-            if (mail == null)
+            if (email== null)
             {
-                return firstname == this.Fullname.FirstName && lastname == this.Fullname.LastName;
+                return firstName == this.Fullname.FirstName && lastName == this.Fullname.LastName;
             }
-            else
-            {
-                return firstname == this.Fullname.FirstName && lastname == this.Fullname.LastName && mail == this.EmailAdresse;
-            }
+            return firstName == this.Fullname.FirstName && lastName == this.Fullname.LastName && email == this.EmailAddress;
         }
         public virtual void PassengerType()
         {
-            Console.WriteLine("I am a PASSENGER");
+            Console.WriteLine("I am a passenger");
         }
-
     }
 }

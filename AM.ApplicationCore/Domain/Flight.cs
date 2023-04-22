@@ -9,34 +9,22 @@ namespace AM.ApplicationCore.Domain
 {
     public class Flight
     {
-
         public string Destination { get; set; }
-
-        public string Departure { get; set; }
-
+        public string? Departure { get; set; }
         public DateTime FlightDate { get; set; }
-
         public int FlightId { get; set; }
-
-
         public DateTime EffectiveArrival { get; set; }
-
         public int EstimatedDuration { get; set; }
-        public string Airline { get; set; }
-
+        public string? Airline { get; set; }
         [ForeignKey("Plane")]
         public int PlaneId { get; set; }
-
-        [ForeignKey("PlaneId")]
-        public Plane Plane { get; set; }
-
-        public virtual List<Passenger> Passengers { get; set; }
-
-
+        //[ForeignKey("PlaneId")]
+        public virtual Plane Plane { get; set; }
+        //public ICollection<Passenger> Passengers { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
         public override string ToString()
         {
-            return "Destination: "+this.Destination+"Departure: "+this.Departure;
+            return "Destination = " + this.Destination + "\n" + "EstimatedDuration = " + this.EstimatedDuration;
         }
-      
     }
 }

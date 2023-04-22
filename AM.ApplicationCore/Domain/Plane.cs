@@ -7,35 +7,23 @@ using System.Threading.Tasks;
 
 namespace AM.ApplicationCore.Domain
 {
-    public enum PlaneType
-    {
-        Boing,
-        Airbus
-    }
+    public enum PlaneType { Boing, Airbus}
     public class Plane
     {
-
-        public int Id { get; set; }
-
-        [Range(0,int.MaxValue)]
-        public int Capacity { get; set; }
-
+        [Range(0, int.MaxValue)] 
+        public int capacity { get; set; }
         public DateTime ManufactureDate { get; set; }
-
-
-        public PlaneType PlaneType { get; set;}
-
-
-        public virtual List<Flight> Flights { get; set; }
-
+        public int PlaneId { get; set; }
+        public PlaneType PlaneType { get; set; }
+        public virtual ICollection<Flight> Flights { get; set; }
         public override string ToString()
         {
-            return "ManufacturerDate: " + this.ManufactureDate;
+            return "Plane Id: " + this.PlaneId;
         }
-        public Plane() { }
+        //public Plane() { }
         //public Plane(PlaneType pt, int capacity, DateTime date)
         //{
-        //    this.Capacity = capacity;
+        //    this.capacity = capacity;
         //    this.ManufactureDate = date;
         //    this.PlaneType = pt;
         //}

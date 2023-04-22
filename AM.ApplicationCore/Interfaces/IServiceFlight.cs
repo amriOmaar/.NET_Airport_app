@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace AM.ApplicationCore.Interfaces
 {
-    public interface IServiceFlight
+    public interface IServiceFlight : IService<Flight>
     {
-        public IEnumerable<DateTime> GetFlightsDates(string destination);
-        public void GetFlights(string filterType, string filterValue);
-        public void ShowFlightsDetails(Plane plane);
-
-        public int ProgrammedFlightsNumber(DateTime startDate);
-
-        public double DurationAverage(string destination);
-        public IEnumerable<Flight> OrderDurationFlights();
-        public IEnumerable<Traveller> SeniorTravellers(Flight flight);
-        public IEnumerable<IGrouping<string, Flight>> DestinationGroupedFlights();
+        //public void Add(Flight flight);
+        //public void Remove(Flight flight);
+        //public IList<Flight> GetAll();
+        IEnumerable<DateTime> GetFlightDates(string destination);
+        void GetFlights(string filterType, string filterValue);
+        void ShowFlightDetails(Plane plane);
+        int ProgrammedFlightNumber(DateTime startDate);
+        double DurationAverage(string destination);
+        public IEnumerable<Flight> OrderedDurationFlights();
+        IEnumerable<Passenger> SeniorTravellers(Flight flight);
+        IEnumerable<IGrouping<string, Flight>> DestinationGroupedFlights();
     }
 }

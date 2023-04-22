@@ -22,6 +22,10 @@ namespace AM.Infrastructure.Configurations
                                                                     .HasColumnName("PassLastName");
                                 }
             );
+
+            //builder.HasDiscriminator<string>("IsTraveller")
+            //    .HasValue<Traveller>("1").HasValue<Staff>("2")
+            //   .HasValue<Traveller>("0");
         }
 
         
